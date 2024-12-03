@@ -62,6 +62,11 @@ half adder
 ![Screenshot 2024-12-01 105746](https://github.com/user-attachments/assets/8945c46b-0e78-422f-886a-51172965abde)
  halfsub
  ![Screenshot 2024-12-01 110313](https://github.com/user-attachments/assets/7cddf454-b884-47dd-a8fc-afb714180c83)
+ 
+**truth table**
+
+![Screenshot 2024-12-03 204839](https://github.com/user-attachments/assets/27b04a8b-0654-4ff4-9968-dfd96873b092)
+![Screenshot 2024-12-03 204850](https://github.com/user-attachments/assets/301b34df-5234-4e24-ac8d-3c2190847076)
 
 **Output/TIMING Waveform**
 halfadder
