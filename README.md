@@ -58,11 +58,24 @@ RegisterNumber:*/24009351
 
 **RTL Schematic**
 half adder
-![Screenshot 2024-12-01 105524](https://github.com/user-attachments/assets/41a13e40-84b2-485d-a42f-132b107183c7)
-![Screenshot 2024-12-01 105746](https://github.com/user-attachments/assets/8945c46b-0e78-422f-886a-51172965abde)
+
+
+      module halfadder(a,b,sum,carry);
+      input a,b;                                     
+      output sum,carry;                        
+      assign sum=(a^b);
+      assign carry=(a&b);
+      endmodule
+
  halfsub
- ![Screenshot 2024-12-01 110313](https://github.com/user-attachments/assets/7cddf454-b884-47dd-a8fc-afb714180c83)
  
+      module halfsub(a,b,difference,borrow);
+      input a,b;
+      output difference,borrow;
+      assign difference=(a^b);
+      assign borrow=(~a&b);
+      endmodule
+
 **truth table**
 
 ![Screenshot 2024-12-03 204839](https://github.com/user-attachments/assets/27b04a8b-0654-4ff4-9968-dfd96873b092)
