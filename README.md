@@ -77,15 +77,20 @@ RegisterNumber:*/24009351
 
 i)
 
+![Screenshot 2024-12-26 181625](https://github.com/user-attachments/assets/83389c84-8cad-41a9-977c-e7dfa82780cf)
+
 ii)
 
-
+![Screenshot 2024-12-26 181636](https://github.com/user-attachments/assets/22101340-ceca-42e6-8653-1b75a4d0e0d7)
 
 **Output/TIMING Waveform**
+
 halfadder
 ![Screenshot 2024-12-01 105746](https://github.com/user-attachments/assets/22c5ff09-db72-47c1-9903-eaf093dfa475)
 halfsub
 ![Screenshot 2024-12-01 110436](https://github.com/user-attachments/assets/b2a9fa13-236c-4eba-8236-5b53f1bb6b82)
 
 **Result:**
+
+ Thus the given Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
