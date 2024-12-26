@@ -36,6 +36,10 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+![Screenshot 2024-12-26 181030](https://github.com/user-attachments/assets/7051bc6e-f3df-4eaa-aa70-5c6cfb8020e7)
+
+![Screenshot 2024-12-26 181035](https://github.com/user-attachments/assets/cd1edb83-1471-4f4e-a5b9-8b47511805f6)
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -54,32 +58,28 @@ Figure -02 HALF Subtractor
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
 Developed by:BHUVANESHWARAN TU
-RegisterNumber:*/24009351 
+RegisterNumber:*/24009351
 
+    module halfadder(a,b,sum,carry);
+    input a,b;                                     
+    output sum,carry;                        
+    assign sum=(a^b);
+    assign carry=(a&b);
+    endmodule
+
+    module halfsub(a,b,difference,borrow);
+    input a,b;
+    output difference,borrow;
+    assign difference=(a^b);
+    assign borrow=(~a&b);
+    endmodule
 **RTL Schematic**
-half adder
+
+i)
+
+ii)
 
 
-      module halfadder(a,b,sum,carry);
-      input a,b;                                     
-      output sum,carry;                        
-      assign sum=(a^b);
-      assign carry=(a&b);
-      endmodule
-
- halfsub
- 
-      module halfsub(a,b,difference,borrow);
-      input a,b;
-      output difference,borrow;
-      assign difference=(a^b);
-      assign borrow=(~a&b);
-      endmodule
-
-**truth table**
-
-![Screenshot 2024-12-03 204839](https://github.com/user-attachments/assets/27b04a8b-0654-4ff4-9968-dfd96873b092)
-![Screenshot 2024-12-03 204850](https://github.com/user-attachments/assets/301b34df-5234-4e24-ac8d-3c2190847076)
 
 **Output/TIMING Waveform**
 halfadder
@@ -88,8 +88,4 @@ halfsub
 ![Screenshot 2024-12-01 110436](https://github.com/user-attachments/assets/b2a9fa13-236c-4eba-8236-5b53f1bb6b82)
 
 **Result:**
-half adder
-![Screenshot 2024-12-01 105508](https://github.com/user-attachments/assets/c1c102d5-4d4b-4f2d-8502-7475b12881a6)
-halfsub
-![Screenshot 2024-12-01 110255](https://github.com/user-attachments/assets/3e64c7f8-0783-4d40-a819-e1ba9b9a9b27)
 
